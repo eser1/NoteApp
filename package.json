@@ -1,0 +1,18 @@
+{
+  "name": "noteapp",
+  "version": "1.0.0",
+  "description": "Note App",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "todolist"
+  ],
+  "author": "eser",
+  "license": "ISC"
+}
