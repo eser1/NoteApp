@@ -1,0 +1,17 @@
+
+
+
+/* Default Borders */
+
+.border-green{
+    border-bottom: 4px solid var(--bg-green) !important;
+}
+.border-blue{
+    border-bottom: 4px solid var(--bg-blue) !important;
+}
+.border-orange{
+    border-bottom: 4px solid var(--bg-orange) !important;
+}
+.border-purple{
+    border-bottom: 4px solid var(--bg-purple) !important;
+}
