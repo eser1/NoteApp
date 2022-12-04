@@ -24,29 +24,29 @@
                 <div> 
                     <a href="#" class="nav_logo"> 
                         <i class='bx bx-layer nav_logo-icon'></i> 
-                        <span class="nav_logo-name">BBBootstrap</span> 
+                        <span class="nav_logo-name">NoteApp</span> 
                     </a>
                     <div class="nav_list"> 
-                        <a href="#" class="nav_link active"> 
-                            <i class='bx bx-grid-alt nav_icon'></i> 
-                            <span class="nav_name">Dashboard</span> 
-                        </a> <a href="#" class="nav_link"> 
+                        <a href="#" class="nav_link "> 
                             <i class='bx bx-user nav_icon'></i> 
-                            <span class="nav_name">Users</span> 
-                        </a> <a href="#" class="nav_link"> 
-                            <i class='bx bx-message-square-detail nav_icon'></i> 
-                            <span class="nav_name">Messages</span> 
+                            <span class="nav_name">Profile</span> 
+                        </a> 
+                        <a href="#" class="nav_link active"> 
+                            <i class='bx bx-edit nav_icon'></i> 
+                            <span class="nav_name">Notes</span> 
                         </a> 
                         <a href="#" class="nav_link"> 
+                            <i class='bx bx-book nav_icon'></i> 
+                            <span class="nav_name">Study</span> 
+                        </a>
+                        <a href="#" class="nav_link"> 
+                            <i class='bx bx-folder nav_icon'></i> 
+                            <span class="nav_name">Folders</span> 
+                        </a> 
+                        <!-- <a href="#" class="nav_link"> 
                             <i class='bx bx-bookmark nav_icon'></i> 
                             <span class="nav_name">Bookmark</span> 
-                        </a> <a href="#" class="nav_link"> 
-                            <i class='bx bx-folder nav_icon'></i> 
-                            <span class="nav_name">Files</span> 
-                        </a> <a href="#" class="nav_link"> 
-                            <i class='bx bx-bar-chart-alt-2 nav_icon'></i> 
-                            <span class="nav_name">Stats</span> 
-                        </a> 
+                        </a>  -->
                     </div>
                 </div> 
                 <a href="#" class="nav_link"> 
@@ -55,18 +55,192 @@
                 </a>
             </nav>
         </div>
+
+        
         <!--Container Main start-->
-        <div class="height-100 bg-light">
-            <h4>Main Components</h4>
+        <div class="page">
+            <div class="write-card mt-3">
+                <a href="#">
+                    <i class='bx bx-edit-alt'></i>
+                    Write Your Note
+                </a>
+            </div>
+            <div class="notes-card mt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mt-2">Alınacaklar</h5>
+                                    <div class="dropdown dropdown-menu-end">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-pencil' ></i>
+                                                    <span>Edit</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-trash' ></i>
+                                                    <span>Delete</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-share'></i>
+                                                    <span>Share</span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div><!-- End Column -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mt-2">Alınacaklar</h5>
+                                    <div class="dropdown dropdown-menu-end">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-pencil' ></i>
+                                                    <span>Edit</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-trash' ></i>
+                                                    <span>Delete</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-share'></i>
+                                                    <span>Share</span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div><!-- End Column -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mt-2">Alınacaklar</h5>
+                                    <div class="dropdown dropdown-menu-end">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-pencil' ></i>
+                                                    <span>Edit</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-trash' ></i>
+                                                    <span>Delete</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-share'></i>
+                                                    <span>Share</span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div><!-- End Column -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mt-2">Alınacaklar</h5>
+                                    <div class="dropdown dropdown-menu-end">
+                                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class='bx bx-dots-horizontal-rounded'></i>
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-pencil' ></i>
+                                                    <span>Edit</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-trash' ></i>
+                                                    <span>Delete</span> 
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <i class='bx bx-share'></i>
+                                                    <span>Share</span> 
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div><!-- End Column -->
+                        
+                        
+                    </div><!-- End row -->
+                </div>
+
+            </div>
+            <!-- End Notes Card -->
         </div>
         <!--Container Main end-->
-    
 
+        
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets//lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>

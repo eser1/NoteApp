@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Validate that all variables exist
   if(toggle && nav && bodypd && headerpd){
 
+    // nav.classList.toggle('show')
+    // // change icon
+    // toggle.classList.toggle('bx-x')
+    // // add padding to body
+    // bodypd.classList.toggle('body-pd')
+    // // add padding to header
+    // headerpd.classList.toggle('body-pd')
+  toggle.addEventListener('click', ()=>{
+    // show navbar
     nav.classList.toggle('show')
     // change icon
     toggle.classList.toggle('bx-x')
@@ -20,16 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     bodypd.classList.toggle('body-pd')
     // add padding to header
     headerpd.classList.toggle('body-pd')
-  // toggle.addEventListener('click', ()=>{
-  //   // show navbar
-  //   nav.classList.toggle('show')
-  //   // change icon
-  //   toggle.classList.toggle('bx-x')
-  //   // add padding to body
-  //   bodypd.classList.toggle('body-pd')
-  //   // add padding to header
-  //   headerpd.classList.toggle('body-pd')
-  // })
+  })
 
 
 

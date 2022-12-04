@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette | NoteApp</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+        /* Main colors */
+        :root{
+            --bg-gray: #768492;
+            --bg-dark: #1F1C2F;
+            --white: #FFFFFF;
+            --text-dark: #131313;
+            --text-light: #848486;
+            --bg-green: #8AC3A3;
+            --bg-blue: #87BAF5;
+            --bg-orange: #F0864A;
+        }
+        .color-box{
+            font-family: "Nunito";
+            height: 50px;
+            width: 250px;
+            background: #fff;
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+        .box1{
+            color: var(--white);
+            background: var(--bg-gray);
+        }
+        .box2{
+            color: var(--white);
+            background: var(--bg-dark);
+        }
+        .box3{
+            background: var(--bg-white);
+        }
+        .box4{
+            color: var(--text-dark);
+        }
+        .box5{
+            color: var(--text-light);
+        }
+        .box6{
+            background: var(--bg-green);
+        }
+        .box7{
+            background: var(--bg-blue);
+        }
+        .box8{
+            background: var(--bg-orange);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1 color-box">bg-gray: #768492</div>
+        <div class="box2 color-box">bg-dark: #1F1C2F</div>
+        <div class="box3 color-box">bg-white: #FFFFFF</div>
+        <div class="box6 color-box">bg-green: #8AC3A3</div>
+        <div class="box7 color-box">bg-blue: #87BAF5</div>
+        <div class="box8 color-box">bg-orange: #F0864A</div>
+        <div class="box4 color-box">text-dark: #131313</div>
+        <div class="box5 color-box">text-light: #848486</div>
+    </div>
+</body>
+</html>
