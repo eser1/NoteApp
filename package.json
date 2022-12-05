@@ -4,9 +4,9 @@
   "description": "Note App",
   "main": "index.html",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "mdb-ui-kit": "^6.0.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "test"
   },

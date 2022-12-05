@@ -1,3 +1,7 @@
+
+//================== NAVBAR CODES ==================
+
+
 document.addEventListener("DOMContentLoaded", function(event) {
    
   const showNavbar = (toggleId, navId, bodyId, headerId) =>{
@@ -5,10 +9,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   nav = document.getElementById(navId),
   bodypd = document.getElementById(bodyId),
   headerpd = document.getElementById(headerId)
-  
-
-
-
 
   // Validate that all variables exist
   if(toggle && nav && bodypd && headerpd){
@@ -30,17 +30,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // add padding to header
     headerpd.classList.toggle('body-pd')
   })
-
-
-
-  }
-  }
+  }}
   
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
-
-
   showNavbar('header-toggle','nav-bar','body-pd','header')
   
   /*===== LINK ACTIVE =====*/

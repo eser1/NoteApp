@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/login.css" />
+    <title>Login | NoteApp</title>
+  </head>
+  <body>
+    <!-- ===== Login-Register Container Start =====-->
+    <div class="outer-container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-- ===== Login Form Start ===== -->
+          <form action="#" method="get" class="sign-in-form">
+            <h2 class="title">Sign in to Your Account</h2>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Sign in" class="btn solid" />
+            <p class="social-text">Or</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <img src="/assets/img/google.png" alt="" srcset="">
+                <span>Sign in with Google</span>
+              </a>
+            </div>
+            
+          </form>
+          <!-- ===== Login Form End ===== -->
+
+          <!-- ===== Register Form Start ===== -->
+          <form action="#" method="post" class="sign-up-form">
+            <h2 class="title">Create Your Account</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" id="name" placeholder="Your Name" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <img src="/assets/img/google.png" alt="" srcset="">
+                <span>Sign up with Google</span>
+              </a>
+            </div>
+          </form>
+          <!-- ===== Register Form Start ===== -->
+        </div>
+      </div>
+      <!-- ===== Login-Register Container End =====-->
+      
+      <!-- ===== Background Panels Start =====-->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Welcome to NoteApp!</h3>
+            <p>
+              New here? If you don't have an account, you can register.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Register
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Welcome to NoteApp!</h3>
+            <p>
+              One of us? If you have already registered, you can login to your account.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===== Background Panels Start =====-->
+    
+    <!-- ===== Scripts Start =====-->
+    <script src="/assets/js/login.js"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js"></script>
+    <!-- ===== Scripts End =====-->
+  </body>
+</html>

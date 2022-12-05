@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
 
@@ -28,7 +28,7 @@
                         <span class="nav_logo-name">NoteApp</span> 
                     </a>
                     <div class="nav_list"> 
-                        <a href="#" class="nav_link "> 
+                        <a href="login/" class="nav_link "> 
                             <i class='bx bx-user nav_icon'></i> 
                             <span class="nav_name">Profile</span> 
                         </a> 
@@ -61,10 +61,47 @@
         <!--Container Main start-->
         <div class="page">
             <div class="write-card mt-3">
-                <a href="#">
+                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                     <i class='bx bx-edit-alt mt-2'></i>
                     <span>Write Your Note</span>
                 </a>
+                <div class="write-form d-none">
+                    <form  method="get">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Write a title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="note" class="form-label">Note</label>
+                            <textarea class="form-control" id="note" rows="3" placeholder="Write your note"></textarea>
+                        </div>
+                        <div class="select-area">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <label for="category" class="form-label">Category</label>
+                                    <select id="category" class="form-select" aria-label="Default select example">
+                                        <option selected>Select a category</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="color" class="form-label">Select Color</label>
+                                   <div class="form-colors d-flex">
+                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
+                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
+                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
+                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
+                                   </div>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <button type="submit" class="btn btn-primary w-100 h-100">Add Note</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="notes-card mt-3">
                 <div class="container">
@@ -72,7 +109,6 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card border-green">
                                 <div class="card-header">
-                                    <h5 class="mt-2">Alınacaklar</h5>
                                     <div class="dropdown dropdown-menu-end">
                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class='bx bx-dots-horizontal-rounded'></i>
@@ -111,7 +147,6 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card border-blue">
                                 <div class="card-header">
-                                    <h5 class="mt-2">Alınacaklar</h5>
                                     <div class="dropdown dropdown-menu-end">
                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class='bx bx-dots-horizontal-rounded'></i>
@@ -150,7 +185,6 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card border-orange">
                                 <div class="card-header">
-                                    <h5 class="mt-2">Alınacaklar</h5>
                                     <div class="dropdown dropdown-menu-end">
                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class='bx bx-dots-horizontal-rounded'></i>
@@ -189,7 +223,6 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card border-purple">
                                 <div class="card-header">
-                                    <h5 class="mt-2">Alınacaklar</h5>
                                     <div class="dropdown dropdown-menu-end">
                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class='bx bx-dots-horizontal-rounded'></i>
@@ -228,7 +261,6 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card border-blue">
                                 <div class="card-header">
-                                    <h5 class="mt-2">Alınacaklar</h5>
                                     <div class="dropdown dropdown-menu-end">
                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class='bx bx-dots-horizontal-rounded'></i>
@@ -267,7 +299,6 @@
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card border-green">
                                 <div class="card-header">
-                                    <h5 class="mt-2">Alınacaklar</h5>
                                     <div class="dropdown dropdown-menu-end">
                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                             <i class='bx bx-dots-horizontal-rounded'></i>
@@ -317,8 +348,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/assets//lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets//lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
