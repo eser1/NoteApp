@@ -1,3 +1,33 @@
+//================== TEXT EDITOR CODES ==================
+
+  tinymce.init({
+    selector: 'textarea#editor',
+    skin: 'bootstrap',
+    plugins: 'lists, link, image, media',
+    toolbar: 'h2 bold strikethrough  bullist numlist color backcolor textcolor',
+    menubar: false,
+  });
+
+
+
+  
+  const writeNoteBtn = document.querySelector(".write-note-btn");
+  const editorContainer = document.querySelector(".editor-container");
+
+  writeNoteBtn.addEventListener("click", ()=>{
+    
+    if(editorContainer.classList.contains("d-none")){
+      editorContainer.classList.remove("d-none")
+    }
+    else{
+      editorContainer.classList.add("d-none")
+    }
+  })
+
+
+
+
+
 
 //================== NAVBAR CODES ==================
 
@@ -50,3 +80,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
    // Your code to run since DOM is loaded and ready
   });
+
+

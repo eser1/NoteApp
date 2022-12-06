@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
-/* ===== Main ====== */
+/* ========== Main =========== */
 
 :root{
     /* Background Colors */
@@ -28,6 +28,10 @@
     font-family: "Nunito";
     
 }
+
+
+
+
 
 body{
     position: relative;
@@ -141,7 +145,7 @@ a{
 }
 
 .body-pd{
-    padding-left: calc(var(--nav-width) + 1rem)
+    padding-left: calc(var(--nav-width) + 1rem);
 }
 
 .active{
@@ -160,6 +164,43 @@ a{
 .height-100{
     height:100vh
 }
+
+/*  const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+  const toggle = document.getElementById(toggleId),
+  nav = document.getElementById(navId),
+  bodypd = document.getElementById(bodyId),
+  headerpd = document.getElementById(headerId) 
+    showNavbar('header-toggle','nav-bar','body-pd','header')*/
+
+/* nav.classList.toggle('show')
+    // change icon
+    toggle.classList.toggle('bx-x')
+    // add padding to body
+    bodypd.classList.toggle('body-pd')
+    // add padding to header
+    headerpd.classList.toggle('body-pd') */
+
+@media (min-width: 991px){
+    #header-toggle{
+        display: none;
+    }
+
+    #nav-bar{
+        width: calc(var(--nav-width) + 156px)
+    }
+
+    #body-pd{
+        padding-left: calc(var(--nav-width) + 188px)
+    }
+
+    #header{
+        padding-left: calc(var(--nav-width) + 188px)
+    }
+    .write-card{
+        margin-top: 0 !important;
+    }
+}
+
 
 @media screen and (min-width: 768px){
     body{
@@ -194,13 +235,13 @@ a{
 /* ========== Start Content Page ========== */
 
 
+
 .page{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0;
-    margin-right: 5rem;
+    margin: 0 !important;
     padding: 0;
     width: 100%;
     
@@ -212,12 +253,14 @@ a{
     box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.1);
 }
 
-
+.write-note-btn{
+    padding-left: 2rem;
+}
 
 
 .write-card, .notes-card{
     background: #FFFFFF;
-    width: 100%;
+    width: 100% ;
     border-radius: 5px;
     
 }
@@ -227,7 +270,7 @@ a{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-weight: 600;
     font-size: 1.5rem;
     
@@ -335,7 +378,59 @@ a{
     
 }
 
-
-
-
 /* ========== End Content Page ========== */
+
+/* ========== Start Text Editor  ========== */
+
+.tox-notification{
+    display: none !important;
+}
+
+.tox-statusbar{
+    display: none !important;
+}
+
+.tox{
+    height: 240px !important;
+    width: 100%;
+}
+
+.editor-btn{
+    display: block;
+    width: 15%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background-color: #6595ee;
+    border: 0;
+    box-shadow: 4px 4px 16px rgb(0, 0, 0, 0.1);
+}
+
+.editor-btn:hover {
+    background-color: #4d84e2;
+    box-shadow: 4px 4px 16px rgb(0, 0, 0, 0.2);
+  }
+
+.animate__animated.animate__fadeIn{
+    --animate-duration: 1.8s;
+}
+
+.editor-container label{
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    
+}
+
+.note-title{
+    margin-bottom: 1rem;
+    border: 0 !important;
+}
+
+
+
+.form-control{
+    border: 2px solid #f0f0f0;
+}
+
+
+
+/* ========== End Text Editor  ========== */

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -18,21 +19,21 @@
     <body id="body-pd">
         <header class="header" id="header">
             <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-            <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+            <div class="header_img"> <img src="assets/img/log.svg" alt=""> </div>
         </header>
         <div class="l-navbar" id="nav-bar">
             <nav class="nav ">
-                <div> 
+                <div>           
                     <a href="#" class="nav_logo"> 
-                        <i class='bx bx-layer nav_logo-icon'></i> 
+                        <i class='bx bx-layer nav_logo-icon'active></i> 
                         <span class="nav_logo-name">NoteApp</span> 
                     </a>
                     <div class="nav_list"> 
-                        <a href="login/" class="nav_link "> 
+                        <a href="login/index.html" class="nav_link "> 
                             <i class='bx bx-user nav_icon'></i> 
                             <span class="nav_name">Profile</span> 
                         </a> 
-                        <a href="#" class="nav_link active"> 
+                        <a href="editor/index.html" class="nav_link "> 
                             <i class='bx bx-edit nav_icon'></i> 
                             <span class="nav_name">Notes</span> 
                         </a> 
@@ -60,52 +61,39 @@
         
         <!--Container Main start-->
         <div class="page">
+
             <div class="write-card mt-3">
-                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <a class="write-note-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                     <i class='bx bx-edit-alt mt-2'></i>
                     <span>Write Your Note</span>
                 </a>
-                <div class="write-form d-none">
-                    <form  method="get">
-                        <div class="mb-3">
-                            <label for="title" class="form-label">Title</label>
-                            <input type="text" class="form-control" id="title" placeholder="Write a title">
-                        </div>
-                        <div class="mb-3">
-                            <label for="note" class="form-label">Note</label>
-                            <textarea class="form-control" id="note" rows="3" placeholder="Write your note"></textarea>
-                        </div>
-                        <div class="select-area">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <label for="category" class="form-label">Category</label>
-                                    <select id="category" class="form-select" aria-label="Default select example">
-                                        <option selected>Select a category</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
+                <div class="container animate__animated animate__fadeIn mt-4 mb-4 editor-container d-none">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <form id="text-form" >
+                                <div class="form-group note-title">
+                                    <input type="text" class="form-control" id="title" placeholder="Write the title of note" required>
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="color" class="form-label">Select Color</label>
-                                   <div class="form-colors d-flex">
-                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
-                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
-                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
-                                    <input type="color" class="form-control form-control-color mx-1" id="color" value="#563d7c" title="Choose your color">
-                                   </div>
+                                <div class="form-group">
+                                    <textarea id="editor" name="note" type="text" placeholder="Write your note here!"></textarea>
                                 </div>
-                                <div class="col-md-12 mt-3">
-                                    <button type="submit" class="btn btn-primary w-100 h-100">Add Note</button>
+                                <div class="d-flex">
+                                    <button type="submit" id="editor-btn" class="btn btn-primary editor-btn">Save</button>
+                                    <button type="button" class="btn btn-primary editor-btn">Close</button>
                                 </div>
-                            </div>
+                            </form>
+                            
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
+            
+            </div>
+           
             <div class="notes-card mt-3">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="notes">
+                        <!-- Start Card -->
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card border-green">
                                 <div class="card-header">
@@ -344,12 +332,14 @@
         <!--Container Main end-->
 
         
-
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets//lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/ui.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

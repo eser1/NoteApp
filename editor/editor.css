@@ -1,0 +1,40 @@
+.tox-notification{
+    display: none !important;
+}
+
+.tox-statusbar{
+    display: none !important;
+}
+
+.tox{
+    height: 250px !important;
+}
+
+.editor-btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #6595ee;
+    border: 0;
+    box-shadow: 4px 4px 16px rgb(0, 0, 0, 0.1);
+}
+
+.editor-btn:hover {
+    background-color: #4d84e2;
+    box-shadow: 4px 4px 16px rgb(0, 0, 0, 0.2);
+  }
+
+.editor-container label{
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    
+}
+
+.note-title{
+    margin-bottom: 1rem;
+    border: 0 !important;
+}
+
+.form-control{
+    border: 2px solid #f0f0f0;
+}
